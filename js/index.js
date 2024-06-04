@@ -8,9 +8,9 @@ let isShowPopup = false;
 //   preloader.style.display = "none";
 // }, 2000);
 
-window.addEventListener("load", () => {
-  preloader.style.display = "none";
-});
+// window.addEventListener("load", () => {
+//   preloader.style.display = "none";
+// });
 
 window.addEventListener("click", (e) => {
   if (isShowPopup) {
@@ -19,17 +19,11 @@ window.addEventListener("click", (e) => {
       !e.target.closest("button.hero__button") &&
       togglePopup();
   }
-  //   console.log(e.target.closest("div.popup"));
 });
 
 window.addEventListener("keydown", (e) => {
   if (e.keyCode == 27 && isShowPopup) togglePopup();
 });
-
-// btnHeroBuy.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   togglePopup();
-// });
 
 const togglePopup = () => {
   if (isShowPopup) {
