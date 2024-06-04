@@ -394,6 +394,10 @@ button {
     justify-self: center;
     margin-bottom: 0rem;
   }
+  .contacts__social svg {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 @media screen and (max-width: 450px) {
   .hero__content {
