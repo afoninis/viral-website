@@ -146,6 +146,7 @@ button {
 .main {
   width: inherit;
   min-height: 100vh;
+  overflow: hidden;
 }
 .hero {
   position: relative;
@@ -254,6 +255,7 @@ button {
   display: grid;
   justify-items: center;
   align-self: end;
+  overflow: hidden;
 }
 .contacts__qr img {
   height: 35vh;
@@ -393,6 +395,11 @@ button {
   .hero__button {
     justify-self: center;
     margin-bottom: 0rem;
+  }
+
+  .contacts__qr img {
+    width: 100%;
+    height: auto;
   }
   .contacts__social svg {
     width: 10rem;
