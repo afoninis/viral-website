@@ -518,7 +518,7 @@ input {
 @media screen and (max-width: 550px) {
   .popup__wrapper {
     width: 85%;
-    height: 60%;
+    height: 65%;
   }
   .form {
     width: 85%;
