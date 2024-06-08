@@ -7,11 +7,13 @@
 
 :root {
   --color-black: rgb(5, 5, 5);
+  --color-black-no-focus: #292828;
   --color-black-full: rgb(0, 0, 0);
   --color-white: #f5f5f5;
   --color-white-full: #fff;
   --color-white-dim: rgb(5, 5, 5);
-  --border-radius: 2rem;
+  --color-green-imp: #19b51d;
+  --border-radius: 5rem;
 }
 
 *,
@@ -38,9 +40,14 @@ li {
   list-style-type: none;
 }
 
-button {
+button,
+input {
   outline: none;
   border: none;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .popup {
@@ -55,15 +62,141 @@ button {
   z-index: 9999;
 }
 .popup__wrapper {
-  width: 50%;
-  height: 60%;
+  position: relative;
+  width: 35%;
+  height: 75%;
   background-color: var(--color-black);
-  border-radius: 5rem;
+  border-radius: var(--border-radius);
   box-shadow: 0px 0px 136px -23px var(--color-white);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+.popup__close {
+  cursor: pointer;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  top: 3rem;
+  right: 3rem;
+  border-radius: 50%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.popup__close:hover {
+  color: var(--color-white);
+  background-color: var(--color-green-imp);
+  transform: scale(1.15);
+}
+.popup__sold-out {
+  font-size: 3rem;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+}
+.form {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  color: var(--color-white);
+  /* background-color: red; */
+  border-radius: var(--border-radius);
+  display: grid;
+  align-content: center;
+  grid-row-gap: 1.5rem;
+}
+.form__item {
+  display: grid;
+  grid-row-gap: 0.5rem;
+}
+.form__label {
+  font-family: "TildaSans", sans-serif;
+  font-size: 1.8rem;
+}
+.form__text {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--color-black-no-focus);
+  transition: all 0.3s ease-in-out;
+}
+.form__text:focus {
+  background-color: var(--color-white);
+}
+.form__imp {
+  color: var(--color-green-imp);
+}
+.form__sizes {
+  display: flex;
+  color: var(--color-black);
+}
+.form__sizes-item {
+  /* width: 5rem; */
+  /* display: grid;
+  grid-template-rows: repeat(2, 1fr); */
+  margin: 0 1rem;
+}
+.form__sizes-item:nth-child(1) {
+  margin-left: 0;
+}
+.form__sizes-item:last-child {
+  margin-right: 0;
+}
+.form__sizes-option {
+  background-color: var(--color-white);
+  font-size: 1.8rem;
+  /* padding: 1rem; */
+  width: 6rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  /* margin-right: 2rem; */
+}
+.form__option-toggled {
+  color: var(--color-white);
+  background-color: var(--color-green-imp);
+}
+.form__sizes-amount {
+  margin-top: 1rem;
+  width: 6rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  /* padding-left: 1rem; */
+  padding: 0.5rem 0;
+}
+.form__item.submit {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.form__submit {
+  /* width: 6rem; */
+  font-size: 1.8rem;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.form__submit:hover {
+  color: var(--color-white);
+  background-color: var(--color-green-imp);
+  transform: scale(1.15);
 }
 
 .preloader {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -300,6 +433,14 @@ button {
   color: var(--color-white);
 }
 
+@media screen and (max-width: 1300px) {
+  .popup__wrapper {
+    width: 40%;
+  }
+  .form {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .hero__video {
     left: 12%;
@@ -311,7 +452,15 @@ button {
     height: auto;
   }
 }
+@media screen and (max-width: 1100px) {
+  .popup__wrapper {
+    width: 45%;
+  }
+}
 @media screen and (max-width: 950px) {
+  .popup__wrapper {
+    width: 55%;
+  }
   .hero__video {
     align-items: center;
     left: 15%;
@@ -321,6 +470,9 @@ button {
   }
 }
 @media screen and (max-width: 800px) {
+  .popup__wrapper {
+    width: 65%;
+  }
   .buy {
     width: 15vw;
   }
@@ -358,7 +510,18 @@ button {
     margin-bottom: 5vh;
   }
 }
+@media screen and (max-width: 650px) {
+  .popup__wrapper {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 550px) {
+  .popup__wrapper {
+    width: 85%;
+  }
+  /* .form {
+    width: 90%;
+  } */
   .hero__heading {
     position: relative;
     left: 50%;
@@ -412,6 +575,9 @@ button {
   }
 }
 @media screen and (max-width: 400px) {
+  .popup__wrapper {
+    width: 92%;
+  }
   .hero__content {
     margin-top: -8rem;
   }

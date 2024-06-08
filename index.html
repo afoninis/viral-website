@@ -33,10 +33,92 @@
   </head>
   <body>
     <div class="popup">
-      <div class="popup__wrapper"></div>
+      <div class="popup__wrapper">
+        <button class="popup__close" onclick="togglePopup()">X</button>
+        <p class="popup__sold-out">SOLD OUT</p>
+        <form action="" class="form">
+          <div class="form__item">
+            <label for="form__fio" class="form__label">Ваши ФИО</label>
+            <input
+              type="text"
+              class="form__text"
+              name="form__fio"
+              id="form__fio"
+              placeholder="Иван Иванович Иванов"
+            />
+          </div>
+          <div class="form__item">
+            <label for="form__email" class="form__label">Эл. почта</label>
+            <input
+              type="email"
+              class="form__text"
+              name="form__email"
+              id="form__email"
+              placeholder="ivan@example.com"
+            />
+          </div>
+          <div class="form__item">
+            <label for="form__address" class="form__label"
+              >Адрес доставки <span class="form__imp">СДЭК</span></label
+            >
+            <input
+              type="text"
+              class="form__text"
+              name="form__address"
+              id="form__address"
+              placeholder="г. Фантазий, ул. Удачи, д. 18, кв. 3"
+            />
+          </div>
+          <div class="form__sizes">
+            <div class="form__sizes-item" data-size="M">
+              <p class="form__sizes-option">M</p>
+              <input
+                type="text"
+                class="form__sizes-amount hidden"
+                value="0"
+                data-size="M"
+              />
+            </div>
+
+            <div class="form__sizes-item" data-size="L">
+              <p class="form__sizes-option">L</p>
+              <input
+                type="text"
+                class="form__sizes-amount hidden"
+                value="0"
+                data-size="L"
+              />
+            </div>
+            <div class="form__sizes-item" data-size="XL">
+              <p class="form__sizes-option">XL</p>
+              <input
+                type="text"
+                class="form__sizes-amount hidden"
+                value="0"
+                data-size="XL"
+              />
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="form__telegram" class="form__label"
+              >Никнейм в Telegram</label
+            >
+            <input
+              type="text"
+              class="form__text"
+              name="form__telegram"
+              id="form__telegram"
+              placeholder="@Wettfuckindustry"
+            />
+          </div>
+          <div class="form__item submit">
+            <button type="submit" class="form__submit">Отправить</button>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <div class="preloader">
+    <!-- <div class="preloader">
       <div class="preloader__wrapper">
         <h2 class="preloader__heading">
           <span class="preloader__char">L</span>
@@ -48,7 +130,7 @@
           <span class="preloader__char">G</span>
         </h2>
       </div>
-    </div>
+    </div> -->
 
     <div class="buy">
       <div class="buy__button">
