@@ -36,7 +36,7 @@
       <div class="popup__wrapper">
         <button class="popup__close" onclick="togglePopup()">X</button>
         <p class="popup__sold-out">SOLD OUT</p>
-        <form action="" class="form">
+        <form action="sendDataToEmail.php" class="form" method="post">
           <div class="form__item">
             <label for="form__fio" class="form__label">Ваши ФИО</label>
             <input
@@ -77,6 +77,8 @@
                 class="form__sizes-amount hidden"
                 value="0"
                 data-size="M"
+                name="form__sizes-amount--M"
+                id="form__sizes-amount--M"
               />
             </div>
 
@@ -87,6 +89,8 @@
                 class="form__sizes-amount hidden"
                 value="0"
                 data-size="L"
+                name="form__sizes-amount--L"
+                id="form__sizes-amount--L"
               />
             </div>
             <div class="form__sizes-item" data-size="XL">
@@ -96,6 +100,8 @@
                 class="form__sizes-amount hidden"
                 value="0"
                 data-size="XL"
+                name="form__sizes-amount--XL"
+                id="form__sizes-amount--XL"
               />
             </div>
           </div>
