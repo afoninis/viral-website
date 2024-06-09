@@ -3,11 +3,6 @@ const AVAILABLE_SIZES = {
   L: 5,
   XL: 2,
 };
-// const AVAILABLE_SIZES = {
-//   M: 0,
-//   L: 0,
-//   XL: 0,
-// };
 
 const popup = document.querySelector("div.popup");
 const preloader = document.querySelector("div.preloader");
@@ -22,13 +17,6 @@ const inputsAmount = document.querySelectorAll("input.form__sizes-amount");
 
 let isShowPopup = false;
 
-// setTimeout(() => {
-//   preloader.style.display = "none";
-// }, 2000);
-
-// window.addEventListener("load", () => {
-//   preloader.style.display = "none";
-// });
 if (
   AVAILABLE_SIZES["M"] <= 0 &&
   AVAILABLE_SIZES["L"] <= 0 &&
@@ -41,11 +29,6 @@ if (
   soldoutLabel.classList.add("hidden");
 }
 
-// btnsSizes.forEach((el) =>
-//   AVAILABLE_SIZES[el.closest("div.form__sizes-item").dataset.size] <= 0
-//     ? el.classList.add("hidden")
-//     : el.classList.remove("hidden")
-// );
 itemsSizes.forEach((el) =>
   AVAILABLE_SIZES[el.dataset.size] <= 0
     ? el.classList.add("hidden")
