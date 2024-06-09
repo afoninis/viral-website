@@ -92,7 +92,7 @@ a {
   display: grid;
   align-items: center;
 }
-.main__letter-wrapper img {
+.main__letter-wrapper svg {
   height: 15rem;
 }
 .main__bottom {
