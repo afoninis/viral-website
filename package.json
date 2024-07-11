@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "build:scss": "sass scss/index.scss:css/index.css scss/thank-you.scss:css/thank-you.css",
+    "build:postcss": "postcss --use autoprefixer -o css/index.css css/index.css",
+    "build:babel": "babel js/index.js --out-file js/compiled-index.js --plugins @babel/plugin-transform-arrow-functions",
+    "build": "npm run build:scss && npm run build:postcss && npm run build:babel"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-decorators": "^7.24.7",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/plugin-transform-arrow-functions": "^7.24.7",
+    "sass": "^1.77.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0"
+  }
+}
