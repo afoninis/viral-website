@@ -2,5 +2,23 @@
 
 # <a href="https://viralisdignity.store/">Their website</a><br />
 
+# Viral Website
+
+Простой лендинг для практики верстки и JavaScript
+Тренировал анимации и интерактивные элементы
+
+## Технологии
+HTML, CSS, JavaScript
+
+## Что умеет
+- Анимации при наведении  
+- Кнопки и простая интерактивность  
+- Структура лендинга: шапка, секции, футер
+
+## Запуск
+```bash
+git clone https://github.com/afoninis/viral-website.git
+```
+
 Landing page for clothing brand "VIRAL"<br>
 Drop 2024
