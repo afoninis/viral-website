@@ -1,6 +1,6 @@
-# <a href="https://afoninis.github.io/viral-website/">Click to Watch</a><br />
+# <a href="https://afoninis.github.io/viral-website/">Посмотреть</a><br />
 
-# <a href="https://viralisdignity.store/">Their website</a><br />
+# <a href="https://viralisdignity.store/">Их сайт (уже не работает)</a><br />
 
 # Viral Website
 
