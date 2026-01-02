@@ -1,4 +1,4 @@
-# <a href="https://steelaura.github.io/viral-website/">Посмотреть</a><br />
+# <a href="https://moonimori.github.io/viral-website/">Посмотреть</a><br />
 
 # <a href="https://viralisdignity.store/">Их сайт (уже не работает)</a><br />
 
