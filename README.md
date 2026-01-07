@@ -1,4 +1,4 @@
-# <a href="https://moonimori.github.io/viral-website/">Посмотреть</a><br />
+# <a href="https://wishik.github.io/viral-website/">Посмотреть</a><br />
 
 # <a href="https://viralisdignity.store/">Их сайт (уже не работает)</a><br />
 
@@ -17,7 +17,7 @@ HTML, CSS, JavaScript
 
 ## Запуск
 ```bash
-git clone https://github.com/afoninis/viral-website.git
+git clone https://github.com/wishik/viral-website.git
 ```
 
 Landing page for clothing brand "VIRAL"<br>
